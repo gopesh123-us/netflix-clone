@@ -16,16 +16,16 @@ export class LoginComponent implements OnInit {
         '418707408157-3s1jmbejkvtl8s33j7lb4vivctreq22s.apps.googleusercontent.com',
       callback: (response: any) => this.handleCredentialResponse(response),
     });
+
     google.accounts.id.renderButton(
       document.getElementById('google-btn'),
       {
         theme: 'filled_blue',
         size: 'large',
         shape: 'rectangle',
-        width: 350,
+        width: 300,
       } // customization attributes
     );
-
     //google.accounts.id.prompt();
   }
   handleCredentialResponse(response: any) {

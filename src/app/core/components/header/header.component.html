@@ -1,0 +1,21 @@
+<header
+  class="sticky top-0 @apply h-[4rem] z-10 bg-gray-900 flex items-center justify-between p-10"
+>
+  <!--logo and nav-->
+  <div class="flex items-center h-full gap-5">
+    <img class="w-[110px]" src="logo.png" alt="netflix logo" />
+    <ul class="flex items-center" *ngFor="let item of navList">
+      <li
+        class="text-sm transition cursor-pointer text-neutral-200 font-extralight hover:text-gray-400 transition-1s"
+      >
+        {{ item }}
+      </li>
+    </ul>
+  </div>
+  <!--welcome user  | profile image | signout button-->
+  <div class="text-white">
+    <a href=""
+      ><span>Welcome <strong>Gopesh</strong></span></a
+    >
+  </div>
+</header>
