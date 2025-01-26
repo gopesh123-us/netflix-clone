@@ -13,9 +13,23 @@
     </ul>
   </div>
   <!--welcome user  | profile image | signout button-->
-  <div class="text-white">
+  <div class="flex flex-row items-center justify-center gap-3 text-white">
     <a href=""
-      ><span>Welcome <strong>Gopesh</strong></span></a
+      ><span
+        >Welcome <strong>{{ userName }}</strong></span
+      ></a
+    >
+    <img
+      class="w-10 h-10 mx-auto rounded-full"
+      [src]="userProfileImg"
+      alt="{{ userName }}"
+    />
+    &nbsp; | &nbsp;
+    <a
+      (click)="signOut()"
+      class="text-xs font-medium cursor-pointer text-white-500 hover:underline hover:text-white-600"
+      href="#"
+      >Sign Out</a
     >
   </div>
 </header>

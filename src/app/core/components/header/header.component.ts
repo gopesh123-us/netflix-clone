@@ -1,5 +1,6 @@
 import { NgFor } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject, Input } from '@angular/core';
+import { AuthService } from '../../../shared/services/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -8,6 +9,10 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.css',
 })
 export class HeaderComponent {
+  authService = inject(AuthService);
+  @Input({ required: true }) userName: string = '';
+  @Input({ required: true }) userProfileImg: string = '';
+
   navList: string[] = [
     'Home',
     'TV Shows',
@@ -15,4 +20,9 @@ export class HeaderComponent {
     'My List',
     'Browse by Language',
   ];
+
+  signOut() {
+    sessionStorage.removeItem('loggedInUser');
+    this.authService.signOut();
+  }
 }

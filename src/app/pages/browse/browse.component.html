@@ -1,4 +1,4 @@
-<app-header></app-header>
+<app-header [userName]="name" [userProfileImg]="picture"></app-header>
 <!-- component -->
 <div class="flex items-center justify-center w-full h-screen">
   <div class="max-w-xs">
@@ -6,7 +6,7 @@
       <div class="p-2 photo-wrapper">
         <img
           class="mx-auto rounded-full w-30 h-30"
-          src="{{ picture }}"
+          [src]="picture"
           alt="{{ name }}"
         />
       </div>
