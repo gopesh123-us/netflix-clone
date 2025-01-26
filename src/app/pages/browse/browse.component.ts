@@ -1,10 +1,11 @@
 import { Component, inject } from '@angular/core';
+import { BannerComponent } from '../../core/components/banner/banner.component';
 import { HeaderComponent } from '../../core/components/header/header.component';
 import { AuthService } from '../../shared/services/auth.service';
 
 @Component({
   selector: 'app-browse',
-  imports: [HeaderComponent],
+  imports: [HeaderComponent, BannerComponent],
   templateUrl: './browse.component.html',
   styleUrl: './browse.component.css',
 })
