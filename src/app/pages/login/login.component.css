@@ -1,0 +1,89 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("/home-bg.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.login-form {
+  background-color: #000000;
+  opacity: 0.875;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  padding: 60px;
+}
+.sign-in {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.sign-in__text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: left;
+}
+.input-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+.input-box__email,
+.input-box__password {
+  background: transparent;
+  border: 1px solid darkgray;
+  height: 50px;
+  padding: 10px;
+}
+.sign-in-button {
+  background-color: #e50914;
+  opacity: 0.9;
+  height: 35px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.sign-in-button:hover {
+  opacity: 1;
+}
+.or-div {
+  margin-bottom: 15px;
+  color: rgb(167, 163, 163);
+}
+.google-btn-div {
+  width: 100%;
+  border: none;
+}
+.google-btn {
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+.forgot-password-div {
+  margin-bottom: 15px;
+}
+.new-to-netflix-div {
+  margin-bottom: 15px;
+}
+.new-to-netflix__text {
+  font-weight: 400;
+  color: rgb(167, 163, 163);
+}
+.sign-up-now {
+  opacity: 1;
+  font-weight: 600;
+  color: #fff;
+}
+.disclaimer {
+  color: rgb(167, 163, 163);
+}

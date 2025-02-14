@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
         theme: 'filled_blue',
         size: 'large',
         shape: 'rectangle',
-        width: 300,
+        font: 'Open Sans',
       } // customization attributes
     );
     //google.accounts.id.prompt();
