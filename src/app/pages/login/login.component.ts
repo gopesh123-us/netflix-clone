@@ -24,6 +24,7 @@ export class LoginComponent implements OnInit {
         size: 'large',
         shape: 'rectangle',
         font: 'Open Sans',
+        width: 280,
       } // customization attributes
     );
     //google.accounts.id.prompt();
